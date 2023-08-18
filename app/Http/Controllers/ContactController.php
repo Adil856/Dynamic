@@ -68,17 +68,4 @@ class ContactController extends Controller
 
         return redirect()->route('contacts.index')->with('success', 'Contact deleted successfully.');
     }
-
-    // public function search(Request $request)
-    // {
-    //     $query = $request->input('query');
-
-    //     // Perform a search in the contacts table based on the query
-    //     $users = Contact::where('name', 'like', "%$query%")
-    //                         ->orWhere('email', 'like', "%$query%")
-    //                         ->orWhere('phone', 'like', "%$query%")
-    //                         ->get();
-
-    //     return view('contacts.search', compact('contacts', 'query'));
-    // }
 }
